@@ -1,0 +1,280 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+}
+
+#main {
+    width: 100%;
+    height: 500vh;
+
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: #EB762D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+nav {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+
+}
+
+.left-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 50vw;
+}
+
+
+.left-header li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+}
+
+#home {
+    border-bottom: 3px solid black;
+}
+
+#home:hover {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: whitesmoke;
+    transition: 0.15s ease;
+}
+
+#botm-line:hover {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: whitesmoke;
+    transition: 0.15s ease;
+
+}
+
+
+.right-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.right-header li {
+    padding: 0px 1.5rem;
+}
+
+#left-border {
+    border-left: 4px solid black;
+
+}
+
+.instagram {
+    width: 50px;
+}
+
+.youtube {
+    width: 42px;
+}
+
+.facebook {
+    width: 84px;
+}
+
+.linkedin {
+    width: 56px;
+}
+
+.main-section {
+    background-color: black;
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page1 {
+    height: 96vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-sec {
+    /* background-color: white; */
+    width: 45vw;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+
+}
+
+
+.right-sec {
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-sec img {
+    width: 40vw;
+}
+
+.one {
+    width: 42vw;
+    height: 10vh;
+}
+
+.two {
+    width: 40vw;
+}
+
+.one h1 {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 5rem;
+    text-align: start;
+    color: #CC6940;
+}
+
+.two h1 {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    text-align: start;
+    color: #CC6940;
+}
+
+.three {
+    height: 25vh;
+    width: 40vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.three img {
+    width: 25vw;
+}
+
+hr {
+    width: 95%;
+    height: 4.5px;
+    background-color: #EB762D;
+    border: none;
+    border-radius: 10px;
+}
+
+#page2 {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.left {
+    /* background-color: red; */
+    width: 30vw;
+    height: 55vh;
+}
+
+.heading-title {
+    color: #EB762D;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+.sub-heading {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    width: 25vw;
+}
+
+.right {
+    background-color: #EB762D;
+    width: 20vw;
+    height: 60vh;
+    border-radius: 200px;
+    display: flex;
+    align-items: end;
+}
+
+.right img {
+    width: 20vw;
+    border-radius: 200px;
+}
+
+#line {
+    margin-top: 10px;
+    width: 15vw;
+    height: 4px;
+    background-color: #EB762D;
+}
+
+#page3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+}
+
+.pimg {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    flex-direction: column;
+    width: 32vw;
+    height: 50vh;
+}
+
+.pimg img {
+    width: 30vw;
+}
+
+.title{
+    color: white;
+    text-align: left;
+    width: 30vw;
+    font-size: 1.3rem;
+}
+
+.pvideo{
+    background-color: black;
+}
