@@ -856,3 +856,77 @@ a .learn-btn:hover::before {
 .skill h3 {
     color: #12F6FF;
 }
+
+@media screen and (max-width:425px){
+    body{
+        padding: 0;
+    }
+    header{
+        height: 60px;
+        
+    }
+    header h1{
+        font-size: 6vw;
+    }
+    header nav ul{
+        display: none;
+    }
+
+    #resume1{
+        display: block;
+    }
+
+    #resume{
+        display: none;
+    }
+
+    .home-container{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    .img-box{
+        width: 75%;
+    }
+
+    .right-container{
+        width: 100%;
+    }
+
+    .main-head{
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    .left-container{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .change-txt{
+        width: 150%;
+        align-items: center;
+        justify-content: center;
+    }
+    .change-txt h2{
+        font-size: 4vw;
+    }
+
+    .left-container p{
+        width: 100%;
+        font-size: 0.7rem;
+        line-height: 3.3vw;
+        text-align: center;
+    }
+
+    .btn-box{
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .btn{
+            padding: 2vw 4vw;
+    font-size: 2.8vw;
+    }
+
+}
