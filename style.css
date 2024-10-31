@@ -68,7 +68,7 @@ header nav ul li a {
     display: none;
 }
 
-#resume{
+#resume {
     border: 0;
     padding: 10px 20px;
     border-radius: 10px;
@@ -76,25 +76,33 @@ header nav ul li a {
     font-weight: 600;
     background-color: white;
     outline: none;
+    transform: 0;
     position: relative;
     overflow: hidden;
     z-index: 1;
 }
-#resume::after{
+
+#resume:hover {
+    transform: translateY(-1.2px);
+    cursor: pointer;
+}
+
+#resume::before {
     content: "";
     position: absolute;
-    width: 0%;
-    height: 100%;
-    background-color: red;
-    left: 0;
-    top: 0;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #00F5FF;
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
     z-index: -1;
-    transition: all linear 0.2s;
 }
-#resume:hover::after{
-    left: 120%;
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-   
+
+#resume:hover::before {
+    top: -30px;
+    left: -30px;
 }
 
 /* --------------------------------- header animation part ---------------------------------------- */
@@ -125,7 +133,7 @@ header nav ul li:hover::before {
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 
@@ -276,23 +284,24 @@ a .btn:hover {
 
 }
 
-.social-icons .facebook:hover{
+.social-icons .facebook:hover {
     background-color: #ffffff;
     color: #3b82f6;
 }
-.social-icons .instagram:hover{
+
+.social-icons .instagram:hover {
     background: #833ab4;
-    background: linear-gradient(
-      to right,
-      #833ab4,#fd1d1d,#fcb045
-    );
+    background: linear-gradient(to right,
+            #833ab4, #fd1d1d, #fcb045);
     color: white;
 }
-.social-icons .youtube:hover{
+
+.social-icons .youtube:hover {
     background: #ffffff;
     color: rgb(255, 0, 0);
 }
-.social-icons .globe:hover{
+
+.social-icons .globe:hover {
     background: #ffffff;
     color: rgb(52, 52, 48);
 }
@@ -411,8 +420,8 @@ a .btn:hover {
     header nav ul {
         display: none;
     }
-    
-    #resume{
+
+    #resume {
         display: none;
     }
 
@@ -478,27 +487,29 @@ a .btn:hover {
         width: 8.2vw;
         height: 4.2vh;
     }
-    .social-icons .facebook{
+
+    .social-icons .facebook {
         background-color: #ffffff;
         color: #3b82f6;
     }
-    .social-icons .instagram{
+
+    .social-icons .instagram {
         background: #833ab4;
-        background: linear-gradient(
-          to right,
-          #833ab4,#fd1d1d,#fcb045
-        );
+        background: linear-gradient(to right,
+                #833ab4, #fd1d1d, #fcb045);
         color: white;
     }
-    .social-icons .youtube{
+
+    .social-icons .youtube {
         background: #ffffff;
         color: rgb(255, 0, 0);
     }
-    .social-icons .globe{
+
+    .social-icons .globe {
         background: #ffffff;
         color: rgb(52, 52, 48);
     }
-    
+
 }
 
 /* ------------------------------------------------ About-section ------------------------------------------------------- */
@@ -551,8 +562,6 @@ a .btn:hover {
 .right-about {
     width: 60%;
     max-height: 90%;
-    height: max-content;
-    margin-bottom: 6vw;
 }
 
 .right-about h1 {
@@ -575,109 +584,65 @@ a .read-more {
     border-radius: 6px;
     font-weight: 600;
     margin-top: 1vw;
-    border: 2px solid #12F6FF;
     background-color: #12F6FF;
-    color: #130311;
+    border: 2px solid #12F6FF;
+    box-shadow: 0px 0px 8px 2.5px rgba(18, 246, 255, 1);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
-a .read-more:active {
-    box-shadow: 1px 1px 4px 2.5px rgba(18, 246, 255, 1);
-    color: #12F6FF;
-    background-color: #130311;
+a #linkedin {
+    font-size: 1.2vw;
+    padding: .3vw .6vw;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 1vw;
+    background-color: #12F6FF;
+    border: 2px solid #12F6FF;
+    box-shadow: 0px 0px 8px 2.5px rgba(18, 246, 255, 1);
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
-/* ----------------------------------------------------- about-section-meadia-queries ------------------------------------------------ */
-
-
-@media screen and (max-Width:900px) {
-    .about {
-        height: 140vw;
-
-    }
-
-    .about-container {
-        padding-top: 2vw;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5vw;
-    }
-
-    .about-box {
-        width: 100%;
-    }
-
-    .left-about {
-        height: 60vw;
-    }
-
-    .image-box {
-        width: 35vw;
-        border-radius: 85px;
-    }
-
-    .right-about {
-        padding: 0 5%;
-    }
-
-    .right-about h1 {
-        font-size: 3.8vw;
-    }
-
-    .right-about h3 {
-        font-size: 2vw;
-        line-height: 0.5vw;
-    }
-
-    .right-about p {
-        font-size: 1.7vw;
-        text-align: start;
-        line-height: 2vh;
-        margin-top: 1.8vw;
-    }
-
-    a .read-more {
-        font-size: 2vw;
-        padding: .5vw 1vw;
-    }
+a #linkedin::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #173260;
+    top: 0;
+    left: 0;
+    transition: 0.4s all linear;
+    z-index: -1;
 }
 
-@media screen and (max-Width:425px) {
-    .about {
-        justify-content: start;
-        height: max-content;
-    }
-
-    .about-container {
-        height: 75vh;
-    }
-
-    .image-box {
-        width: 50vw;
-    }
-
-    .right-about {
-        padding: 0 10%;
-    }
-
-    .right-about h1 {
-        font-size: 5vw;
-    }
-
-    .right-about h3 {
-        font-size: 3.5vw;
-        line-height: 4vw;
-    }
-
-    .right-about p {
-        font-size: 2.5vw;
-        width: 90%;
-    }
-
-    a .read-more {
-        font-size: 3vw;
-        padding: .8vw 1.5vw;
-    }
+a #linkedin:hover::before,
+a .read-more:hover::before {
+    width: 100%;
 }
+
+a #linkedin:hover,
+a .read-more:hover {
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+a .read-more::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #173260;
+    top: 0;
+    left: 0;
+    transition: 0.4s all linear;
+    z-index: -1;
+}
+
+/* ----------------------------------------- Service Section ----------------------------------------------------- */
 
 .service {
     height: calc(100vh - 70px);
@@ -824,92 +789,10 @@ a .learn-btn:hover::before {
     display: block;
 }
 
-@media screen and (max-width:900px) {
-
-
-    .service-box h2 {
-        font-size: 2.2vw;
-    }
-
-    .service-box p {
-        line-height: 1.8vw;
-        width: 80%;
-        font-size: 1.5vw;
-    }
-
-    .content {
-        height: 40vw;
-    }
-
-    .img-display {
-        margin-bottom: 0.5vw;
-        width: 50%;
-    }
-
-}
-
-@media screen and (max-width:425px) {
-
-
-    .service {
-        height: 160vw;
-        align-items: start;
-    }
-
-    .service-container {
-        height: MAX-CONTENT;
-
-    }
-
-    .service-container h1 {
-        font-size: 8vw;
-    }
-
-    .service-container h4 {
-        font-size: 4vw;
-    }
-
-    .service-box {
-        height: 40vh;
-        gap: 3vw;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        height: max-content;
-        padding: 2% 7%;
-    }
-
-    .service-box h2 {
-        font-size: 4vw;
-    }
-
-    .service-box p {
-        font-size: 2vw;
-        line-height: 2.2vw;
-        width: 80%;
-    }
-
-    .content {
-        width: 45%;
-        height: 60vw;
-
-    }
-
-    .img-display {
-        margin-bottom: 4.5vw;
-        height: 30%;
-        width: 45%;
-    }
-
-    a .learn-btn {
-        padding: 1vw 1.5vw;
-        font-size: 2.2vw;
-    }
-}
-
 /* ------------------------------------------------ Skills-section -------------------------------------------------- */
 
 .skills {
-    height: 150vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -927,36 +810,36 @@ a .learn-btn:hover::before {
 .skills-container h2 {
     color: #12F6FF;
     font-size: 3vw;
+    margin-top: 40px;
 }
 
 
 .skills-box {
-    width: 90%;
-    height: 95%;
-    /* background-color: #2D3250;    */
+    width: 100%;
+    height: 100%;
+    /* background-color: #2D3250; */
     border-radius: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 30px;
-    padding: 0px 3 0px;
-    align-content: center;
-    margin-top: 60px;
+    gap: 35px;
+    margin-top: 50px;
 }
 
 .skill {
     width: 15vw;
-    height: 30vh;
+    height: 15vw;
     background-color: #213937;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* border: 2px solid #12F6FF; */
-    transition: all 0.2s ease-in;
+    color: white;
+    transition: all 0.4s ease;
+
 }
+
 
 .skill img {
     width: 10vw;
@@ -972,48 +855,4 @@ a .learn-btn:hover::before {
 
 .skill h3 {
     color: #12F6FF;
-}
-
-
-@media screen and (max-width:900px) {
-
-    .skills-box {
-        width: 90%;
-        padding: 5% 2%;
-        height: max-content;
-        justify-content: start;
-    }
-
-    .skill {
-        width: 25vw;
-        height: 20vw;
-    }
-}
-
-@media screen and (max-width:425px) {
-    .skills {
-        height: 245vw;
-        padding-top: 10vw;
-        align-items: START;
-    }
-
-    .skills-container h2 {
-        font-size: 7vw;
-    }
-
-    .skills-box {
-        gap: 4vw;
-        justify-content: center;
-    }
-
-    .skill {
-        width: 60vw;
-        height: 60vw;
-    }
-
-    .skill img {
-        width: 25vw;
-        height: 25vw;
-    }
-
 }
