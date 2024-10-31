@@ -856,14 +856,13 @@ a .learn-btn:hover::before {
 .skill h3 {
     color: #12F6FF;
 }
-
 @media screen and (max-width:425px){
-    body{
-        padding: 0;
-    }
+
     header{
         height: 60px;
-        
+        margin-top: 0;
+        margin-bottom: 30px;
+   
     }
     header h1{
         font-size: 6vw;
@@ -927,6 +926,15 @@ a .learn-btn:hover::before {
     .btn{
             padding: 2vw 4vw;
     font-size: 2.8vw;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+
+    .social-links{
+        width: 7vw;
+        height: 7vw;
     }
 
 }
