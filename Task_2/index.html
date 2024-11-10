@@ -1,1 +1,429 @@
-TA
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeHarbor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<style>
+    .swiper {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-slide {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 22vw;
+        height: 26vw;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>HomeHarbor</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#property">PROPERTIES</a></li>
+                <!-- <li><a href="#blog">BLOGS</a></li> -->
+                <li><a href="#testimonal">TESTIMONALS</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+
+        <div class="img-container">
+            <div class="content">
+                <h1>FIND YOUR PROPERTY</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="search-box">
+                <select name="status" id="status" class="input-data">
+                    <option value="default" selected disabled hidden>Status</option>
+                    <option value="Under-construction">Under Construction</option>
+                    <option value="Ready">Ready</option>
+                </select>
+                <select name="room" id="room" class="input-data">
+                    <option value="default" selected disabled hidden>BHK type</option>
+                    <option value="1rk">1 RK</option>
+                    <option value="1bhk">1 BHK</option>
+                    <option value="2bhk">2 BHK</option>
+                    <option value="3bhk">3 BHK</option>
+                    <option value="4bhk">4 BHK</option>
+                </select>
+                <select name="location" id="location" class="input-data">
+                    <option value="default" selected disabled hidden>Location</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Gurgaon">Gurgaon</option>
+                    <option value="Indore">Indore</option>
+                </select>
+                <input type="search" class="search-input" placeholder="Search near by Location">
+                <ion-icon name="search" class="search-icon"></ion-icon>
+            </div>
+        </div>
+    </section>
+    <section id="property">
+        <h1>Featured Properties</h1>
+        <p>Find your properties in your City</p>
+        <div class="property-container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="image">
+                                <p class="price"><span>$850.00</span>Per month</p>
+                            </div>
+                            <div class="pro-content">
+                                <h3>Real Luxury Villa</h3>
+                                <h4>
+                                    <ion-icon name="location"></ion-icon>
+                                    <p>123 Kathal Smt. Tampa city</p>
+                                </h4>
+                            </div>
+                            <div class="pro-content spec">
+                                <p>Area <br> 3600 Sqft</p>
+                                <p>Bedrooms <br> 3</p>
+                                <p>Baths <br>2</p>
+                                <p>Garage <br> 1</p>
+                            </div>
+                            <div class="pro-name">
+                                <ion-icon name="person"></ion-icon>
+                                <p>John Doe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="image">
+                                <p class="price"><span>$550.00</span>Per month</p>
+                            </div>
+                            <div class="pro-content">
+                                <h3>Modern Family Home</h3>
+                                <h4>
+                                    <ion-icon name="location"></ion-icon>
+                                    <p>123 Kathal Smt. Tampa city</p>
+                                </h4>
+                            </div>
+                            <div class="pro-content spec">
+                                <p>Area <br> 6600 Sqft</p>
+                                <p>Bedrooms <br> 5</p>
+                                <p>Baths <br>3</p>
+                                <p>Garage <br>2</p>
+                            </div>
+                            <div class="pro-name">
+                                <ion-icon name="person"></ion-icon>
+                                <p>John Doe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="image">
+                                <p class="price"><span>$850.00</span>Per month</p>
+                            </div>
+                            <div class="pro-content">
+                                <h3>Real Luxury Villa</h3>
+                                <h4>
+                                    <ion-icon name="location"></ion-icon>
+                                    <p>123 Kathal Smt. Tampa city</p>
+                                </h4>
+                            </div>
+                            <div class="pro-content spec">
+                                <p>Area <br> 3600 Sqft</p>
+                                <p>Bedrooms <br> 3</p>
+                                <p>Baths <br>2</p>
+                                <p>Garage <br> 1</p>
+                            </div>
+                            <div class="pro-name">
+                                <ion-icon name="person"></ion-icon>
+                                <p>John Doe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="image">
+                                <p class="price"><span>$850.00</span>Per month</p>
+                            </div>
+                            <div class="pro-content">
+                                <h3>Real Luxury Villa</h3>
+                                <h4>
+                                    <ion-icon name="location"></ion-icon>
+                                    <p>123 Kathal Smt. Tampa city</p>
+                                </h4>
+                            </div>
+                            <div class="pro-content spec">
+                                <p>Area <br> 3600 Sqft</p>
+                                <p>Bedrooms <br> 3</p>
+                                <p>Baths <br>2</p>
+                                <p>Garage <br> 1</p>
+                            </div>
+                            <div class="pro-name">
+                                <ion-icon name="person"></ion-icon>
+                                <p>John Doe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="image">
+                                <p class="price"><span>$850.00</span>Per month</p>
+                            </div>
+                            <div class="pro-content">
+                                <h3>Real Luxury Villa</h3>
+                                <h4>
+                                    <ion-icon name="location"></ion-icon>
+                                    <p>123 Kathal Smt. Tampa city</p>
+                                </h4>
+                            </div>
+                            <div class="pro-content spec">
+                                <p>Area <br> 3600 Sqft</p>
+                                <p>Bedrooms <br> 3</p>
+                                <p>Baths <br>2</p>
+                                <p>Garage <br> 1</p>
+                            </div>
+                            <div class="pro-name">
+                                <ion-icon name="person"></ion-icon>
+                                <p>John Doe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="image">
+                                <p class="price"><span>$850.00</span>Per month</p>
+                            </div>
+                            <div class="pro-content">
+                                <h3>Real Luxury Villa</h3>
+                                <h4>
+                                    <ion-icon name="location"></ion-icon>
+                                    <p>123 Kathal Smt. Tampa city</p>
+                                </h4>
+                            </div>
+                            <div class="pro-content spec">
+                                <p>Area <br> 3600 Sqft</p>
+                                <p>Bedrooms <br> 3</p>
+                                <p>Baths <br>2</p>
+                                <p>Garage <br> 1</p>
+                            </div>
+                            <div class="pro-name">
+                                <ion-icon name="person"></ion-icon>
+                                <p>John Doe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="image">
+                                <p class="price"><span>$850.00</span>Per month</p>
+                            </div>
+                            <div class="pro-content">
+                                <h3>Real Luxury Villa</h3>
+                                <h4>
+                                    <ion-icon name="location"></ion-icon>
+                                    <p>123 Kathal Smt. Tampa city</p>
+                                </h4>
+                            </div>
+                            <div class="pro-content spec">
+                                <p>Area <br> 3600 Sqft</p>
+                                <p>Bedrooms <br> 3</p>
+                                <p>Baths <br>2</p>
+                                <p>Garage <br> 1</p>
+                            </div>
+                            <div class="pro-name">
+                                <ion-icon name="person"></ion-icon>
+                                <p>John Doe.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <section id="working">
+        <h1>Working with Harbor</h1>
+        <p>Who you work with matters</p>
+        <div class="work-container">
+            <div class="w">
+                <div class="bob"><ion-icon name="people-outline" class="bob-icon"></ion-icon></div>
+                <h3>Personalized Services</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus illum doloribus officia fugit,
+                    sapiente aspernatur?</p>
+            </div>
+            <div class="w">
+                <div class="bob1"><ion-icon name="home-outline" class="bob-icon"></ion-icon></ion-icon></div>
+
+                <h3>Luxury Real State Experts</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus illum doloribus officia fugit,
+                    sapiente aspernatur?</p>
+            </div>
+            <div class="w">
+                <div class="bob2"><ion-icon name="cart-outline" class="bob-icon"></ion-icon></ion-icon></div>
+
+                <h3>Modern Building For Sell & Rent</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus illum doloribus officia fugit,
+                    sapiente aspernatur?</p>
+            </div>
+        </div>
+    </section>
+    <section id="places">
+        <h1>Most Popular Places</h1>
+        <p>Find your properties</p>
+        <div class="place-container">
+            <div class="places p1">
+                <h3>Tokyo</h3>
+                <p>12 Properties</p>
+            </div>
+            <div class="places p2">
+                <h3>United States</h3>
+                <p>20 Properties</p>
+            </div>
+            <div class="places p3">
+                <h3>London</h3>
+                <p>80 Properties</p>
+            </div>
+            <div class="places p4">
+                <h3>UK</h3>
+                <p>42 Properties</p>
+            </div>
+            <div class="places p5">
+                <h3>Cannada</h3>
+                <p>96 Properties</p>
+            </div>
+        </div>
+    </section>
+    <section id="testimonal">
+        <h1>Customer <span>Testimonials</span></h1>
+        <p>Real stories from people Who connect with Us</p>
+        <div class="testimonal-container">
+
+            <div class="testimonal-slide">
+                <div class="user-img"></div>
+                <h3>Donal Jackman</h3>
+                <p style="    font-size: 1vw;
+color: #000000;
+font-weight: 500;
+">Sales Manager</p>
+                <div class="stars"><img src="/img/STAR.png" width="100px" alt=""></div>
+                <p class="review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio labore
+                    voluptas
+                    dolores iusto voluptatibus quidem rerum minus doloribus ipsam quibusdam?</p>
+            </div>
+
+
+            <div class="testimonal-slide">
+                <div class="user-img"></div>
+                <h3>Donal Jackman</h3>
+                <p style="    font-size: 1vw;
+color: #000000;
+font-weight: 500;
+">Sales Manager</p>
+                <div class="stars"><img src="/img/STAR.png" width="100px" alt=""></div>
+                <p class="review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio labore
+                    voluptas
+                    dolores iusto voluptatibus quidem rerum minus doloribus ipsam quibusdam?</p>
+
+            </div>
+
+            <div class="testimonal-slide">
+                <div class="user-img"></div>
+                <h3>Donal Jackman</h3>
+                <p style="    font-size: 1vw;
+color: #000000;
+font-weight: 500;
+">Sales Manager</p>
+                <div class="stars"><img src="/img/STAR.png" width="100px" alt=""></div>
+                <p class="review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio labore
+                    voluptas
+                    dolores iusto voluptatibus quidem rerum minus doloribus ipsam quibusdam?</p>
+            </div>
+
+            <div class="testimonal-slide">
+                <div class="user-img"></div>
+                <h3>Donal Jackman</h3>
+                <p style="    font-size: 1vw;
+color: #000000;
+font-weight: 500;
+">Sales Manager</p>
+                <div class="stars"><img src="/img/STAR.png" width="100px" alt=""></div>
+                <p class="review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio labore
+                    voluptas
+                    dolores iusto voluptatibus quidem rerum minus doloribus ipsam quibusdam?</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <a href="#home" id="gotobtn"><ion-icon name="arrow-up-outline" class="arrow-btn"></ion-icon></a>
+        <h1>Connect With Us</h1>
+        <p>Ready to make Your home sweet With us</p>
+        <div class="contact-container">
+            <form action="">
+                <div class="box row">
+                    <label for="">Name</label> <br>
+                    <input type="text" placeholder="Your Name">
+
+                </div>
+                <div class="box row">
+                    <label for="">Email</label> <br>
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <div class="box msg">
+                    <p>Message</p>
+                    <textarea name="" id=""></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
+</body>
+
+</html>
