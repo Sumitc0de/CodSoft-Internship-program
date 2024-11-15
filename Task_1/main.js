@@ -86,10 +86,54 @@ gsap.from(".about-container .right-about",{
     duration:1.8,
     delay:0.5,
     scrollTrigger:{
-        trigger:".about-container .left-about",
+        trigger:".about-container .right-about",
         scroller:"body",
         start:"top 60%"
     }
     
 })
 
+gsap.from(".skills-container h2",{
+    y:100,
+    opacity:0,
+    duration:1,
+    scrollTrigger:{
+        trigger:".skills-container h2",
+        scroller:"body",
+        start:"50% 60%",
+        end:"1000% 50%"
+    }
+})
+
+gsap.from(".skills-container .skills-box",{
+    x:-2000,
+    opacity:0,
+    duration:0.4,
+    delay:0.6,
+    stagger:0.2,
+    scrollTrigger:{
+        trigger:".skills-box",
+        scroller:"body",
+        start:"50% 60%",
+        end:"1000% 50%"
+    }
+})
+
+gsap.from(".project h1",{
+    y:15,
+    opacity:0,
+    duration:1.5,
+})
+gsap.from(".p-box",{
+    x:1200,
+    opacity:0,
+    duration:2,
+    delay:1,
+    stagger:0.8,
+    scrollTrigger:{
+        trigger:".p-box",
+        scroller:"body",
+        start:"20% 80%",
+        end:"100% 50%",
+    }
+})
